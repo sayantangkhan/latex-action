@@ -6,4 +6,6 @@ COPY \
   entrypoint.sh \
   /root/
 
+RUN apk --no-cache add git
+
 ENTRYPOINT ["/root/entrypoint.sh"]
